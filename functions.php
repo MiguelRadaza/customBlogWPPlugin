@@ -1,5 +1,17 @@
 <?php
 
+    function custom_blog_theme_menu()
+    {
+        $location = array(
+            'primary' => "Desktop Primary Left Sidebar",
+            'footer' => 'Footer menus item'
+        );
+
+        register_nav_menus($location);
+    }
+
+    add_action('init', 'custom_blog_theme_menu');
+
     function custom_blog_theme_support()
     {
         add_theme_support('title-tag');
