@@ -1,0 +1,186 @@
+/*
+Theme Name: Custom Blog
+Text Domain: CustomBlog
+Version: 1.0
+Description: A fancy custom blog wordpress theme
+Tags: custom blog, fancy wordpress theme
+Author: Miguel Igdalino
+Author URI: https://miguel-radaza.com
+*/
+
+body {
+    font-family: "Kanit", serif;
+    background-color: #f7f7f7;
+  }
+  
+  .sidebar {
+    background-color: white;
+    color: #1c1c1c;
+    padding-top: 20px;
+    min-height: 100vh;
+  }
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Spacing between links */
+  }
+  
+  .sidebar a {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1c1c1c;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .sidebar a .fas {
+    transition: transform 0.3s;
+  }
+  
+  .sidebar a:hover {
+    margin-left: 10px; /* Add margin on hover */
+  }
+  
+  .sidebar a:hover .fas {
+    transform: translateX(5px); /* Move the icon to the right */
+  }
+  
+  .content {
+    margin-top: 5%;
+    padding: 20px;
+  }
+  
+  p {
+    color: #787878;
+  }
+  
+  .bg-dark {
+    background-color: #1c1c1c !important;
+  }
+  
+  .custom-post-card {
+    background-color: white;
+    width: auto;
+  
+    .custom-post-content {
+      padding: 30px;
+  
+      .custom-post-title {
+        color: #0088cc;
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+  }
+  
+  .custom-post-card .custom-post-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .custom-post-card .custom-post-content ul li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  /* Footer Icos */
+  
+  /* Custom footer styles */
+  .bg-color-dark-scale-2 {
+    background-color: #333;
+  }
+  
+  .footer {
+    color: white;
+    padding-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-social-icons {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-social-icons li {
+    margin-right: 10px;
+  }
+  
+  .footer-social-icons a {
+    color: white;
+    font-size: 20px;
+  }
+  
+  .text-1 {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 576px) {
+    .footer-social-icons {
+      justify-content: center;
+    }
+  }
+  
+  .blog-post,
+  .blog-post-single {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  
+    /* Style for the custom post card */
+    .custom-post-card {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Align post-date with h4 title */
+    .custom-post-content {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Style for the post-date container */
+    .post-date {
+      display: inline-block;
+      background-color: #f8f9fa;
+      padding: 5px 10px;
+      border-radius: 5px;
+      align-self: flex-start; /* Align to the start of the flex container */
+      margin-top: 10px; /* Add some spacing */
+    }
+  
+    /* Style for the day */
+    .day {
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #343a40;
+    }
+  
+    /* Style for the month */
+    .month {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      color: #343a40;
+      display: block;
+    }
+  
+  }
+   
+
+.content-container {
+  margin-bottom: 100px;
+}
